@@ -1,0 +1,202 @@
+{
+  "brand": {
+    "name": "Hoag Land Services",
+    "shortName": "HLS",
+    "tagline": "Site, Tree & Fence Work in Central Florida",
+    "voice": "Direct, honest, capable. No fluff — straightforward tradespeople who do quality work outdoors.",
+    "personality": ["Reliable", "Hardworking", "Local", "Experienced", "Unpretentious"]
+  },
+  "logo": {
+    "file": "HLSlogo-nobackground.png",
+    "description": "Circular badge with a bold X/cross motif. Letters H (left), L (top), S (right) arranged around the cross. A vintage tractor illustration sits in the lower center of the circle. Dark forest green on transparent background.",
+    "style": "Vintage badge / emblem",
+    "colors": {
+      "primary": "#2E4A1E",
+      "background": "transparent"
+    }
+  },
+  "colors": {
+    "cssVariables": {
+      "--color-brand": "#2E7D32",
+      "--color-accent": "#B66E41",
+      "--color-bg": "#FFFFFF",
+      "--color-text": "#2F2F2F",
+      "--color-muted": "#6B7280",
+      "--color-surface": "#F4F5F7",
+      "--color-dark": "#1F2933",
+      "--color-border": "#E5E7EB",
+      "--color-beige": "#F2E8C6",
+      "--color-error": "#B91C1C",
+      "--color-success": "#166534"
+    },
+    "palette": {
+      "brand": {
+        "hex": "#2E7D32",
+        "name": "Forest Green",
+        "usage": "Primary brand color — header background, primary buttons, links, accents"
+      },
+      "accent": {
+        "hex": "#B66E41",
+        "name": "Warm Bronze / Tan",
+        "usage": "Secondary accent — accent buttons, decorative card bars, highlights"
+      },
+      "altAccents": [
+        { "hex": "#586C3D", "name": "Olive Green" },
+        { "hex": "#2F5D3A", "name": "Deep Forest Green" },
+        { "hex": "#4B3A2A", "name": "Dark Brown" }
+      ],
+      "neutrals": {
+        "white": { "hex": "#FFFFFF", "usage": "Page background, card backgrounds" },
+        "text": { "hex": "#2F2F2F", "usage": "Primary body text" },
+        "muted": { "hex": "#6B7280", "usage": "Secondary/muted text, captions" },
+        "surface": { "hex": "#F4F5F7", "usage": "Section backgrounds, light surfaces" },
+        "dark": { "hex": "#1F2933", "usage": "Dark section backgrounds" },
+        "border": { "hex": "#E5E7EB", "usage": "Borders, dividers" },
+        "beige": { "hex": "#F2E8C6", "usage": "Warm accent backgrounds, callout blocks" }
+      },
+      "footer": { "hex": "#101623", "name": "Near Black", "usage": "Footer background" },
+      "overlayText": { "value": "rgba(255,255,255,0.88)", "usage": "Light text on dark/image backgrounds" },
+      "status": {
+        "error": { "hex": "#B91C1C" },
+        "success": { "hex": "#166534" }
+      }
+    }
+  },
+  "typography": {
+    "fontStack": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", sans-serif",
+    "type": "System font stack (no custom web fonts)",
+    "scale": {
+      "baseLineHeight": 1.6,
+      "headingWeight": 600,
+      "buttonWeight": 500
+    },
+    "notes": "No Google Fonts or custom typefaces — uses OS native sans-serif stack for performance and readability."
+  },
+  "spacing": {
+    "scale": [0, "0.25rem", "0.5rem", "0.75rem", "1rem", "1.25rem", "1.5rem", "2rem", "2.5rem", "3rem", "4rem"],
+    "cssVariables": {
+      "--space-0": "0",
+      "--space-1": "0.25rem",
+      "--space-2": "0.5rem",
+      "--space-3": "0.75rem",
+      "--space-4": "1rem",
+      "--space-5": "1.25rem",
+      "--space-6": "1.5rem",
+      "--space-8": "2rem",
+      "--space-10": "2.5rem",
+      "--space-12": "3rem",
+      "--space-16": "4rem"
+    }
+  },
+  "layout": {
+    "maxWidth": "1100px",
+    "breakpoints": {
+      "md": "768px",
+      "lg": "1024px"
+    },
+    "gridColumns": {
+      "services": "auto-fit, minmax(220px, 1fr)",
+      "portfolio": "2–3 columns responsive"
+    }
+  },
+  "components": {
+    "header": {
+      "position": "sticky",
+      "background": "var(--color-brand)",
+      "boxShadow": true
+    },
+    "buttons": {
+      "base": {
+        "display": "inline-flex",
+        "borderRadius": "var(--radius)",
+        "transition": "all 0.2s ease"
+      },
+      "primary": {
+        "background": "#FFFFFF",
+        "color": "var(--color-brand)",
+        "usage": "Main CTA on dark/hero backgrounds"
+      },
+      "accent": {
+        "background": "var(--color-accent)",
+        "color": "#FFFFFF",
+        "usage": "Secondary CTAs"
+      },
+      "pill": {
+        "borderRadius": "999px"
+      }
+    },
+    "cards": {
+      "background": "#FFFFFF",
+      "borderRadius": "10px",
+      "boxShadow": "0 6px 20px rgba(0,0,0,0.08)",
+      "serviceCard": {
+        "accentBar": "::before pseudo-element with gradient using brand/accent colors",
+        "border": true
+      }
+    },
+    "hero": {
+      "layout": "CSS Grid",
+      "overlay": "linear-gradient over background image",
+      "backgroundImages": ["site1.JPEG", "tree5.JPEG", "fence5.jpeg"]
+    },
+    "portfolio": {
+      "grid": "Responsive 2–3 column grid",
+      "hoverEffect": "transform scale",
+      "lightbox": {
+        "overlay": "position: fixed, dark background, opacity transition"
+      }
+    },
+    "forms": {
+      "controls": {
+        "width": "100%",
+        "borderRadius": "var(--radius)",
+        "focusOutline": "var(--color-brand)"
+      }
+    },
+    "footer": {
+      "background": "#101623",
+      "color": "rgba(255,255,255,0.88)"
+    }
+  },
+  "imagery": {
+    "style": "Real job-site photography — no stock photos. iPhone shots from actual projects.",
+    "subjects": [
+      "Heavy equipment (excavators, tractors) in wooded Florida landscapes",
+      "Tree removal with cranes and bucket trucks in residential areas",
+      "Fence lines across open fields and pastures under blue skies",
+      "Florida native vegetation: palms, live oaks, cypress"
+    ],
+    "tones": ["Outdoor greens and browns", "Bright blue Florida skies", "Earth tones", "Yellow/orange heavy equipment"],
+    "heroImages": {
+      "site": {
+        "file": "site1.JPEG",
+        "description": "Yellow SANY excavator doing land clearing in a wooded area; worker visible in background; overcast Florida sky"
+      },
+      "tree": {
+        "file": "tree5.JPEG",
+        "description": "Tree removal in progress — large tree being felled with crane/bucket truck in a residential neighborhood with palms and live oaks; bright blue sky"
+      },
+      "fence": {
+        "file": "fence5.jpeg",
+        "description": "Long wooden post-and-rail fence running along a cleared field with dry grass; truck parked along fence line; expansive blue sky"
+      }
+    }
+  },
+  "styleIdentity": {
+    "aesthetic": "Clean, functional, rugged-outdoors. Earthy greens and warm browns grounded in real Florida land-clearing work.",
+    "mood": "Trustworthy, capable, no-nonsense. Like the crew themselves.",
+    "designPrinciples": [
+      "Simple and straight-forward — mirrors the company's own service language",
+      "Performance-first (system fonts, minimal dependencies)",
+      "Photography does the heavy lifting — real work, real results",
+      "Green-dominant brand tied to outdoor/environmental service identity",
+      "Warm bronze accent adds approachability and contrast"
+    ],
+    "doNots": [
+      "Avoid stock photography",
+      "Avoid heavy decorative typefaces",
+      "Avoid cool/blue color schemes",
+      "Avoid corporate polish — keep it authentic and grounded"
+    ]
+  }
+}
